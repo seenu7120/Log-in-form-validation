@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form"  id="log-in">
+
+            <h1 class="title">login</h1>
+            <div class="alert-error"></div>
+            <div class="input-group">
+                <div class="input-box ">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="user-input " id="login-username" autofocus placeholder="UserName or Email Address" />
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                </div>
+                <div class="input-msg-box"></div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-box input-success">
+                    <i class="fas fa-lock"></i>
+                    <input  type="password" class="user-input" id="login-password" placeholder="Password" />
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                </div>
+                <div class="input-msg-box"></div>
+            </div>
+            
+            <button  class="clicker-button" autofocus>sign in</button>
+            
+            <p class="links" >
+                <a href="#">Forgot Password?</a>
+            </p>
+            <p class="links"  >
+                <a href="#" id="create-account-link" >Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form hidden" id="create-account">
+
+            <h1 class="title" >create account</h1>
+            <div class="alert-error"></div>
+            <div class="input-group user-name">
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="user-input "  id="create-account-userName" autofocus placeholder="UserName" />
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                </div>
+                <div class="input-msg-box "></div>                
+            </div>
+            <div class="input-group email ">
+                <div class="input-box">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" class="user-input" id="create-account-email" placeholder="Email Address" />
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                </div>
+                <div class="input-msg-box"></div>
+            </div>
+            
+            <div class="input-group password">
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="user-input" id="create-account-password" placeholder="Password" />
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                </div>
+                <div class="input-msg-box "></div>
+            </div>
+            <div class="input-group password-confirm">
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="user-input" id="create-account-passwordConfirm" placeholder="Re-enter Password" />
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <i class="fa-solid fa-circle-exclamation error-icon"></i>
+                </div>
+                <div class="input-msg-box "></div>
+            </div>
+            
+            <button class="clicker-button">Sign up</button>
+            
+            <p class="links" >
+                <a href="#" id="log-in-link" >Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
